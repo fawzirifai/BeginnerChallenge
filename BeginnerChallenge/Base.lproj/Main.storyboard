@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ncm-Es-JYU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -59,10 +60,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Venues" largeTitleDisplayMode="always" id="HL3-rE-uai">
-                        <barButtonItem key="rightBarButtonItem" title="en" id="7hv-am-6nB"/>
+                        <barButtonItem key="rightBarButtonItem" title="en" id="7hv-am-6nB">
+                            <connections>
+                                <action selector="languageButtonTapped" destination="pnJ-BP-2Qy" id="ec4-8q-Z6y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="languageButton" destination="7hv-am-6nB" id="vRp-R7-oSg"/>
+                        <outlet property="languageButton" destination="7hv-am-6nB" id="Kcs-6V-QI8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiF-Rv-XRG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
