@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		E41970922886CA1C00C1913E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970912886CA1C00C1913E /* AppDelegate.swift */; };
 		E41970942886CA1C00C1913E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970932886CA1C00C1913E /* SceneDelegate.swift */; };
-		E41970962886CA1C00C1913E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970952886CA1C00C1913E /* ViewController.swift */; };
 		E41970992886CA1C00C1913E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41970972886CA1C00C1913E /* Main.storyboard */; };
 		E419709B2886CA1D00C1913E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E419709A2886CA1D00C1913E /* Assets.xcassets */; };
 		E419709E2886CA1D00C1913E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E419709C2886CA1D00C1913E /* LaunchScreen.storyboard */; };
+		E41970A62886CB9500C1913E /* VenueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970A52886CB9500C1913E /* VenueTableViewController.swift */; };
+		E41970A82886CBAB00C1913E /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970A72886CBAB00C1913E /* VenueDetailViewController.swift */; };
+		E41970AA2886CC4200C1913E /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970A92886CC4200C1913E /* Venue.swift */; };
+		E41970AC2886D1FD00C1913E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970AB2886D1FD00C1913E /* Response.swift */; };
+		E41970AE2886DEFD00C1913E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41970AD2886DEFD00C1913E /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E419708E2886CA1C00C1913E /* BeginnerChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeginnerChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41970912886CA1C00C1913E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E41970932886CA1C00C1913E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E41970952886CA1C00C1913E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E41970982886CA1C00C1913E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E419709A2886CA1D00C1913E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E419709D2886CA1D00C1913E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E419709F2886CA1D00C1913E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41970A52886CB9500C1913E /* VenueTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewController.swift; sourceTree = "<group>"; };
+		E41970A72886CBAB00C1913E /* VenueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
+		E41970A92886CC4200C1913E /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		E41970AB2886D1FD00C1913E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E41970AD2886DEFD00C1913E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				E41970912886CA1C00C1913E /* AppDelegate.swift */,
 				E41970932886CA1C00C1913E /* SceneDelegate.swift */,
-				E41970952886CA1C00C1913E /* ViewController.swift */,
+				E41970B02886E50400C1913E /* Controller */,
+				E41970AF2886E4EB00C1913E /* Model */,
 				E41970972886CA1C00C1913E /* Main.storyboard */,
 				E419709A2886CA1D00C1913E /* Assets.xcassets */,
 				E419709C2886CA1D00C1913E /* LaunchScreen.storyboard */,
 				E419709F2886CA1D00C1913E /* Info.plist */,
 			);
 			path = BeginnerChallenge;
+			sourceTree = "<group>";
+		};
+		E41970AF2886E4EB00C1913E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E41970AB2886D1FD00C1913E /* Response.swift */,
+				E41970A92886CC4200C1913E /* Venue.swift */,
+				E41970AD2886DEFD00C1913E /* Settings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E41970B02886E50400C1913E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E41970A52886CB9500C1913E /* VenueTableViewController.swift */,
+				E41970A72886CBAB00C1913E /* VenueDetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41970962886CA1C00C1913E /* ViewController.swift in Sources */,
+				E41970A62886CB9500C1913E /* VenueTableViewController.swift in Sources */,
+				E41970AA2886CC4200C1913E /* Venue.swift in Sources */,
 				E41970922886CA1C00C1913E /* AppDelegate.swift in Sources */,
 				E41970942886CA1C00C1913E /* SceneDelegate.swift in Sources */,
+				E41970AE2886DEFD00C1913E /* Settings.swift in Sources */,
+				E41970AC2886D1FD00C1913E /* Response.swift in Sources */,
+				E41970A82886CBAB00C1913E /* VenueDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +202,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -230,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
